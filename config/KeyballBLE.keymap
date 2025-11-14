@@ -58,10 +58,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E             &kp R                        &kp T                                                              &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D             &kp F                        &kp G        &mkp RCLK                          &kp BACKSLASH      &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                        &kp B        &mkp LCLK                          &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp QUESTION
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE      &lt 1 ENTER                             &kp EXCLAMATION
+&kp Q             &kp W         &kp E             &kp R                        &kp T                                                                  &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F                        &kp G            &mkp RCLK                          &kp LEFT_BRACKET   &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                        &kp B            &mkp LCLK                          &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp QUESTION
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 6 INT_HENKAN  &lt 2 BACKSPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp SPACE          &lt 1 ENTER                             &kp EXCLAMATION
             >;
 
             sensor-bindings = <&ROTATE SCRL_UP SCRL_DOWN>;
@@ -87,10 +87,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                              &trans
+&trans  &trans          &kp UP_ARROW    &trans           &trans                             &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &kp ESCAPE     &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans
+&trans  &trans          &trans          &trans           &trans  &trans      &kp C_AC_HOME  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
+&trans  &trans          &trans          &trans           &trans  &trans      &trans         &trans                                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -116,10 +116,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans     &trans      &studio_unlock  &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kt KP_N4  &trans      &bootloader     &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans     &trans      &trans          &trans                                                  &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans                              &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &studio_unlock  &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader     &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans      &trans          &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };
